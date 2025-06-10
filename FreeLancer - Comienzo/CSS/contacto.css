@@ -599,5 +599,11 @@ body {
 
     .contenido-principal .servicios .formulario{
         width: 100%;
+        padding: 1rem;
+    }
+
+    .contenido-principal .servicios .formulario legend {
+        padding-top: 1rem;
+        font-size: 1.2rem;
     }
 }
