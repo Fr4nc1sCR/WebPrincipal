@@ -20,7 +20,7 @@
         <nav class="navegacion-principal" id="nav-menu">
             <h3 class="escondido-temporal">Menu</h3>
             <a href="../index.html">Inicio</a>
-            <a href="#">Sobre mi</a>
+            <a href="SobreMi.html">Sobre mi</a>
             <a href="#">Clientes</a>
             <a href="#">Contacto</a>
         </nav>
@@ -48,7 +48,7 @@
         </section>
 
         <div class="servicios">
-            <form class="formulario">
+            <form class="formulario"  action="https://formsubmit.co/hviquezc24@gmail.com" method="POST">
                 <fieldset>
                     <legend>Contáctame llenando todos los campos</legend>
 
@@ -56,25 +56,29 @@
 
                         <div class="campo">
                             <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Nombre">
+                            <input class="input-text" name="Nombre" type="text" placeholder="Nombre" required>
                         </div>
 
                         <div class="campo">
                             <label>Teléfono</label>
-                            <input class="input-text" type="tel" placeholder="Teléfono">
+                            <input class="input-text" name="Telefono" type="tel" placeholder="Teléfono" required>
                         </div>
 
                         <div class="campo">
                             <label>Correo</label>
-                            <input class="input-text" type="email" placeholder="Email">
+                            <input class="input-text" name="Correo" type="email" placeholder="Email" required>
                         </div>
 
                         <div class="campo">
                             <label>Mensaje</label>
-                            <textarea class="input-text"></textarea>
+                            <textarea class="input-text" name="Mensaje" required></textarea>
                         </div>
 
                     </div>
+                    
+                    <!-- Opcionales para mejorar comportamiento -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://webprincipal.netlify.app/">
 
                     <div class="formulario-boton">
                         <input type="submit" class="boton-fondo" value="Enviar">

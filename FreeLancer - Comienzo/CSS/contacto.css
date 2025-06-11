@@ -428,20 +428,24 @@ body {
         background-color: rgba(0, 0, 0, .7);
     }
 
+    .fondo-texto .contenedor-hero .lugar{
+        margin-top: 0rem;
+    }
+
     .fondo-texto .contenedor-hero h2 {
-        font-size: 4rem;
-        padding-top: 17rem;
-        padding-bottom: 2.5rem;
+        font-size: 6rem;
+        padding-top: 13rem;
+        padding-bottom: 0rem;
     }
 
     .fondo-texto .contenedor-hero .lugar svg {
-        width: 5rem;
-        height: 5rem;
+        width: 6.5rem;
+        height: 6.5rem;
     }
 
     .fondo-texto .contenedor-hero .lugar p {
-        font-size: 2.5rem;
-        margin-top: 1.3rem;
+        font-size: 3.2rem;
+        margin-top: 1.6rem;
     }
 
     .fondo-texto .contenedor-hero .boton-fondo {
@@ -574,9 +578,13 @@ body {
         background-color: rgba(0, 0, 0, .7);
     }
 
+    .fondo-texto .contenedor-hero .lugar{
+        margin-top: 3rem;
+    }
+
     .fondo-texto .contenedor-hero h2 {
         font-size: 2.5rem;
-        padding-top: 9rem;
+        padding-top: 12rem;
         margin-bottom: 0rem;
     }
 
