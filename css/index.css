@@ -604,4 +604,23 @@ body {
         row-gap: 2rem;
         column-gap: 0;
     }
+
+    .portafolio-grid {
+        grid-template-columns: none;
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+        padding: 1.5rem 0.8rem;
+        gap: 2rem;
+    }
+
+    .proyecto-card {
+        padding: 1.5rem;
+    }
+
+    .proyecto-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .proyecto-card p {
+        font-size: 1.4rem;
+    }
 }
