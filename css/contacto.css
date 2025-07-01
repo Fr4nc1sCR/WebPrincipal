@@ -176,20 +176,22 @@ body {
 .boton-fondo {
     background-color: var(--primario);
     display: flex;
-    justify-content: center; /* centra el texto dentro del botón */
+    justify-content: center;
+    /* centra el texto dentro del botón */
     align-items: center;
     height: 5rem;
     width: 9.5rem;
     border-radius: 1.8rem;
     border-style: hidden;
     font-weight: 550;
-    color: var(--blanco); /* <-- esto lo centra horizontalmente */
+    color: var(--blanco);
+    /* <-- esto lo centra horizontalmente */
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
     margin-top: 1rem;
 }
 
-.boton-fondo:hover{
+.boton-fondo:hover {
     background-color: var(--blanco);
     color: var(--primario);
     cursor: pointer;
@@ -274,7 +276,7 @@ body {
     resize: vertical;
 }
 
-.contenido-principal .servicios .formulario .formulario-boton{
+.contenido-principal .servicios .formulario .formulario-boton {
     display: flex;
     justify-content: center;
 }
@@ -298,6 +300,23 @@ body {
     display: flex;
     justify-content: center;
 }
+
+/* Contacto SweetAlert */
+
+.swal-wide {
+    width: 500px !important;
+    font-size: 18px;
+}
+
+.swal-title-big {
+    font-size: 24px !important;
+}
+
+.swal-text-big {
+    font-size: 18px !important;
+}
+
+/* Pie de Página */
 
 .Pie-pagina {
     display: flex;
@@ -428,7 +447,7 @@ body {
         background-color: rgba(0, 0, 0, .7);
     }
 
-    .fondo-texto .contenedor-hero .lugar{
+    .fondo-texto .contenedor-hero .lugar {
         margin-top: 0rem;
     }
 
@@ -578,7 +597,7 @@ body {
         background-color: rgba(0, 0, 0, .7);
     }
 
-    .fondo-texto .contenedor-hero .lugar{
+    .fondo-texto .contenedor-hero .lugar {
         margin-top: 3rem;
     }
 
@@ -605,7 +624,7 @@ body {
         margin: 2rem auto;
     }
 
-    .contenido-principal .servicios .formulario{
+    .contenido-principal .servicios .formulario {
         width: 100%;
         padding: 1rem;
     }

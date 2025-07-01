@@ -48,37 +48,32 @@
         </section>
 
         <div class="servicios">
-            <form class="formulario"  action="https://formsubmit.co/hviquezc24@gmail.com" method="POST">
+            <form class="formulario" id="contactForm">
                 <fieldset>
                     <legend>Contáctame llenando todos los campos</legend>
 
                     <div class="contenedor-campos">
-
                         <div class="campo">
                             <label>Nombre</label>
-                            <input class="input-text" name="nombre" type="text" placeholder="Nombre">
+                            <input class="input-text" name="nombre" id="nombre" type="text" placeholder="Nombre" required>
                         </div>
 
                         <div class="campo">
                             <label>Teléfono</label>
-                            <input class="input-text" name="telefono" type="tel" placeholder="Teléfono">
+                            <input class="input-text" name="telefono" id="telefono" type="tel" placeholder="Teléfono" required>
                         </div>
 
                         <div class="campo">
                             <label>Correo</label>
-                            <input class="input-text" name="correo" type="email" placeholder="Email">
+                            <input class="input-text" name="correo" id="correo" placeholder="Email" required>
                         </div>
 
                         <div class="campo">
                             <label>Mensaje</label>
-                            <textarea class="input-text" name="Mensaje"></textarea>
+                            <textarea class="input-text" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje"
+                                required></textarea>
                         </div>
-
                     </div>
-                    
-                    <!-- Opcionales para mejorar comportamiento -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://webprincipal.netlify.app/">
 
                     <div class="formulario-boton">
                         <input type="submit" class="boton-fondo" value="Enviar">
@@ -108,7 +103,9 @@
     <script src="../javascript/boton-nav.js"></script>
     <script src="../javascript/nav-scroll.js"></script>
     <script src="../javascript/funciones.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../javascript/enviar-formulario.js"></script>
 </body>
 
 </html>
