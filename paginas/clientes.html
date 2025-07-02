@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julián Quesada Víquez - FreeLancer</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preload" href="../CSS/clientes.css" as="stylesheet">
+    <link rel="stylesheet" href="../CSS/clientes.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>Julián Quesada Víquez <span>FreeLancer</span></h1>
+
+        <!-- Botón hamburguesa -->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <nav class="navegacion-principal" id="nav-menu">
+            <h3 class="escondido-temporal">Menu</h3>
+            <a href="../index.html">Inicio</a>
+            <a href="SobreMi.html">Sobre mi</a>
+            <a href="#">Clientes</a>
+            <a href="Contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="fondo-texto">
+        <div class="contenedor-hero">
+            <h2>Diseño y Desarrollo Web FreeLancer</h2>
+            <div class="lugar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="none" stroke="#ffcc00"
+                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+                <p>Heredia, Costa Rica</p>
+            </div>
+
+            <input type="submit" class="boton-fondo" value="Contactar"
+                onclick="window.location.href='paginas/Contacto.html'">
+        </div>
+    </section>
+
+    <main class="contenido-principal">
+
+        <section class="contenido-titulo">
+            <h2>Mis Clientes</h2>
+        </section>
+
+        <div class="cards-clientes">
+            <div class="card-cliente">
+                <div class="icono-cliente">👤</div>
+                <h3>Tu logo aquí</h3>
+                <p>Este espacio puede ser para tu marca o negocio. ¡Hablemos!</p>
+                <a href="Contacto.html" class="boton-contacto">Contáctame</a>
+            </div>
+
+            <div class="card-cliente">
+                <div class="icono-cliente">🚀</div>
+                <h3>¿Tu proyecto?</h3>
+                <p>Estoy listo para ayudarte a desarrollar tu sitio web profesional.</p>
+                <a href="Contacto.html" class="boton-contacto">Contáctame</a>
+            </div>
+
+            <div class="card-cliente">
+                <div class="icono-cliente">💼</div>
+                <h3>Cliente futuro</h3>
+                <p>Este es un espacio reservado para mis próximos colaboradores.</p>
+                <a href="Contacto.html" class="boton-contacto">Contáctame</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="Pie-pagina">
+        <p>&copy; 2025 Julián Quesada Víquez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../javascript/boton-nav.js"></script>
+    <script src="../javascript/funciones.js"></script>
+    <script src="../javascript/nav-scroll.js"></script>
+</body>
+
+</html>
