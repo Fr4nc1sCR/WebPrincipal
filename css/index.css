@@ -263,7 +263,7 @@ body {
 
 .portafolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
     padding: 2rem 1rem;
     margin: 0 auto;
