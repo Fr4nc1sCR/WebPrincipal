@@ -4,132 +4,507 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julián Quesada Víquez - FreeLancer</title>
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="preload" href="CSS/index.css" as="stylesheet">
-    <link rel="stylesheet" href="CSS/index.css">
+    <title>Julián Quesada Víquez · Desarrollador Web</title>
+    <meta name="description"
+        content="Portafolio de Julián Quesada Víquez, desarrollador web y estudiante de Ingeniería en Sistemas en Heredia, Costa Rica. Diseño y desarrollo de sitios modernos, rápidos y adaptables.">
+    <meta name="theme-color" content="#0b1220">
+    <meta property="og:title" content="Julián Quesada Víquez · Desarrollador Web">
+    <meta property="og:description" content="Diseño y desarrollo de sitios web modernos, rápidos y adaptables.">
+    <meta property="og:type" content="website">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232ec4d6'/%3E%3Cstop offset='1' stop-color='%23ffc107'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='26' text-anchor='middle' fill='%230b1220'%3EJQ%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header class="encabezado">
-        <h1>Julián Quesada Víquez <span>FreeLancer</span></h1>
+    <div class="progreso" id="progreso" aria-hidden="true"></div>
 
-        <!-- Botón hamburguesa -->
-        <button class="menu-toggle" id="menu-toggle">☰</button>
+    <!-- ================= ENCABEZADO ================= -->
+    <header class="encabezado" id="encabezado">
+        <div class="contenedor encabezado__barra">
+            <a href="#inicio" class="marca" aria-label="Ir al inicio">
+                <span class="marca__logo">JQ</span>
+                <span class="marca__texto">Julián Quesada <small>Desarrollador Web</small></span>
+            </a>
 
-        <nav class="navegacion-principal" id="nav-menu">
-            <h3 class="escondido-temporal">Menu</h3>
-            <a href="#">Inicio</a>
-            <a href="paginas/SobreMi.html">Sobre mi</a>
-            <a href="paginas/clientes.html">Clientes</a>
-            <a href="paginas/Contacto.html">Contacto</a>
-        </nav>
+            <nav class="navegacion" id="nav-menu" aria-label="Navegación principal">
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#proceso">Proceso</a>
+                <a href="#contacto" class="boton boton--primario navegacion__cta">Hablemos</a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </header>
 
-    <section class="fondo-texto">
-        <div class="contenedor-hero">
-            <h2>Diseño y Desarrollo Web FreeLancer</h2>
-            <div class="lugar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="none" stroke="#ffcc00"
-                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                </svg>
-                <p>Heredia, Costa Rica</p>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+        <div class="hero__fondo" aria-hidden="true">
+            <span class="hero__luz hero__luz--1"></span>
+            <span class="hero__luz hero__luz--2"></span>
+            <span class="hero__foco"></span>
+        </div>
+
+        <div class="contenedor hero__grid">
+            <div class="hero__texto">
+                <p class="etiqueta revelar">
+                    <span class="punto-vivo"></span> Disponible para nuevos proyectos
+                </p>
+
+                <h1 class="revelar">Sitios web que <em>trabajan</em> por tu negocio.</h1>
+
+                <p class="hero__descripcion revelar">
+                    Soy <strong>Julián Quesada</strong>, desarrollador web y estudiante de Ingeniería en Sistemas
+                    en Costa Rica. Diseño y construyo sitios modernos, rápidos y adaptables a cualquier
+                    dispositivo, pensados para que tus clientes te encuentren y te escriban.
+                </p>
+
+                <div class="hero__acciones revelar">
+                    <a href="#contacto" class="boton boton--primario boton--grande">
+                        Empecemos tu proyecto
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                    </a>
+                    <a href="#proyectos" class="boton boton--fantasma boton--grande">Ver mi trabajo</a>
+                </div>
+
+                <ul class="hero__datos revelar">
+                    <li>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                        </svg>
+                        Heredia, Costa Rica
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M22 9L12 4 2 9l10 5 10-5z" />
+                            <path d="M6 11v5c3 2 9 2 12 0v-5" />
+                        </svg>
+                        Universidad Fidélitas
+                    </li>
+                </ul>
             </div>
 
-            <input type="submit" class="boton-fondo" value="Contactar"
-                onclick="window.location.href='paginas/Contacto.html'">
+            <div class="hero__visual revelar">
+                <div class="foto-marco">
+                    <img src="img/foto-perfil.jpeg" alt="Julián Quesada Víquez" width="3840" height="2560">
+                </div>
+
+                <div class="tarjeta-codigo" aria-hidden="true">
+                    <div class="tarjeta-codigo__barra"><i></i><i></i><i></i><span>julian.js</span></div>
+<pre><code><span class="c-k">const</span> julian = {
+  rol: <span class="c-s">"Desarrollador Web"</span>,
+  base: <span class="c-s">"Heredia, CR"</span>,
+  disponible: <span class="c-b">true</span>
+};</code></pre>
+                </div>
+
+                <div class="insignia" aria-hidden="true">
+                    <span class="insignia__icono">✦</span>
+                    <span><strong>Diseño a medida</strong><br>sin plantillas genéricas</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tecnologías -->
+        <div class="tecnologias" aria-label="Tecnologías que uso">
+            <div class="tecnologias__pista">
+                <span>Java</span><span>Spring Boot</span><span>HTML5</span><span>CSS3</span>
+                <span>JavaScript</span><span>Bootstrap</span><span>Supabase</span><span>PostgreSQL</span>
+                <span>PHP</span><span>C#</span><span>UX/UI</span><span>Render</span><span>Netlify</span>
+                <!-- Duplicado para el desplazamiento infinito -->
+                <span aria-hidden="true">Java</span><span aria-hidden="true">Spring Boot</span>
+                <span aria-hidden="true">HTML5</span><span aria-hidden="true">CSS3</span>
+                <span aria-hidden="true">JavaScript</span><span aria-hidden="true">Bootstrap</span>
+                <span aria-hidden="true">Supabase</span><span aria-hidden="true">PostgreSQL</span>
+                <span aria-hidden="true">PHP</span><span aria-hidden="true">C#</span>
+                <span aria-hidden="true">UX/UI</span><span aria-hidden="true">Render</span>
+                <span aria-hidden="true">Netlify</span>
+            </div>
         </div>
     </section>
 
-    <main class="contenido-principal">
+    <main>
+        <!-- ================= SOBRE MÍ ================= -->
+        <section class="seccion" id="sobre-mi">
+            <div class="contenedor">
+                <div class="sobre-mi">
+                    <div class="sobre-mi__intro revelar">
+                        <p class="sobretitulo"><span>01</span> Sobre mí</p>
+                        <h2>Estudiante de ingeniería, <span class="resaltado">desarrollador</span> por vocación.</h2>
+                        <p>
+                            Soy desarrollador web y diseñador UX/UI con pasión por crear soluciones digitales
+                            modernas, accesibles y efectivas. Me formé como Técnico en Desarrollo de Software,
+                            viví la experiencia de estudiar en Oklahoma Christian University y hoy curso
+                            Ingeniería en Sistemas en la Universidad Fidélitas.
+                        </p>
+                        <p>
+                            Me gusta entender el negocio detrás de cada sitio: no solo que se vea bien, sino que
+                            cumpla su objetivo, cargue rápido y funcione en cualquier pantalla.
+                        </p>
+                    </div>
 
-        <section class="contenido-titulo">
-            <h2>Mis servicios</h2>
+                    <div class="cifras">
+                        <div class="cifra brillo revelar">
+                            <strong>2018</strong>
+                            <span>Programando desde mi formación técnica</span>
+                        </div>
+                        <div class="cifra brillo revelar">
+                            <strong><span data-contar="4" data-decimales="1">4.0</span></strong>
+                            <span>GPA en Oklahoma Christian University</span>
+                        </div>
+                        <div class="cifra brillo revelar">
+                            <strong><span data-contar="4">4</span></strong>
+                            <span>Proyectos publicados y funcionando en línea</span>
+                        </div>
+                        <div class="cifra brillo revelar">
+                            <strong><span data-contar="5">5</span></strong>
+                            <span>Lenguajes: Java, C#, C++, JavaScript y PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="perfil">
+                    <!-- Formación -->
+                    <article class="panel revelar">
+                        <h3 class="panel__titulo">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M22 9L12 4 2 9l10 5 10-5z" />
+                                <path d="M6 11v5c3 2 9 2 12 0v-5" />
+                            </svg>
+                            Formación
+                        </h3>
+
+                        <ol class="linea-tiempo">
+                            <li class="linea-tiempo__item linea-tiempo__item--actual">
+                                <span class="linea-tiempo__fecha">2025 — Actualidad</span>
+                                <h4>Universidad Fidélitas</h4>
+                                <p>Ingeniería en Sistemas</p>
+                            </li>
+                            <li class="linea-tiempo__item">
+                                <span class="linea-tiempo__fecha">2024 — 2025</span>
+                                <h4>Oklahoma Christian University</h4>
+                                <p>Fall 2024: GPA 4.0 · Spring 2025: GPA 3.91</p>
+                            </li>
+                            <li class="linea-tiempo__item">
+                                <span class="linea-tiempo__fecha">2018 — 2023</span>
+                                <h4>Colegio Técnico Profesional CIT</h4>
+                                <p>Bachiller en Educación Media · Técnico en Informática en Desarrollo de Software</p>
+                            </li>
+                        </ol>
+                    </article>
+
+                    <!-- Habilidades -->
+                    <article class="panel revelar">
+                        <h3 class="panel__titulo">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7 8l-4 4l4 4" />
+                                <path d="M17 8l4 4l-4 4" />
+                                <path d="M14 4l-4 16" />
+                            </svg>
+                            Habilidades técnicas
+                        </h3>
+
+                        <div class="habilidades">
+                            <div class="habilidad">
+                                <h4>Front-End</h4>
+                                <ul class="chips">
+                                    <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li><li>Responsive</li>
+                                </ul>
+                            </div>
+                            <div class="habilidad">
+                                <h4>Back-End y bases de datos</h4>
+                                <ul class="chips">
+                                    <li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>Thymeleaf</li>
+                                    <li>PHP</li><li>Supabase</li><li>PostgreSQL</li>
+                                </ul>
+                            </div>
+                            <div class="habilidad">
+                                <h4>Lenguajes de programación</h4>
+                                <ul class="chips">
+                                    <li>Java</li><li>C#</li><li>C++</li><li>JavaScript</li><li>PHP</li>
+                                </ul>
+                            </div>
+                            <div class="habilidad">
+                                <h4>Herramientas y despliegue</h4>
+                                <ul class="chips">
+                                    <li>Render</li><li>Netlify</li><li>Arduino</li><li>PSeInt</li><li>Packet Tracer</li>
+                                </ul>
+                            </div>
+                            <div class="habilidad">
+                                <h4>Tecnologías de la información</h4>
+                                <ul class="chips">
+                                    <li>Ensamblaje de hardware</li><li>Mantenimiento</li><li>Redes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <div class="servicios">
-            <section class="servicio">
-                <h3>Diseño Web</h3>
+        <!-- ================= SERVICIOS ================= -->
+        <section class="seccion seccion--suave" id="servicios">
+            <div class="contenedor">
+                <header class="seccion__encabezado revelar">
+                    <p class="sobretitulo"><span>02</span> Servicios</p>
+                    <h2>Lo que puedo hacer por ti</h2>
+                    <p>Desde una landing page hasta una tienda sencilla: cada proyecto se construye a la medida de lo
+                        que tu negocio necesita.</p>
+                </header>
 
-                <div class="iconos">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="32">
-                        <path
-                            d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
-                        <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                        <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                        <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                    </svg>
+                <div class="servicios">
+                    <article class="servicio brillo revelar">
+                        <div class="servicio__icono">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
+                                <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            </svg>
+                        </div>
+                        <span class="servicio__numero">01</span>
+                        <h3>Diseño Web</h3>
+                        <p>Sitios modernos, rápidos y adaptables a cualquier dispositivo. Ideales para portafolios,
+                            negocios pequeños o landing pages.</p>
+                        <ul>
+                            <li>Diseño responsive</li>
+                            <li>Identidad visual coherente</li>
+                            <li>Optimizado para cargar rápido</li>
+                        </ul>
+                    </article>
+
+                    <article class="servicio servicio--destacado brillo revelar">
+                        <div class="servicio__icono">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7 8l-4 4l4 4" />
+                                <path d="M17 8l4 4l-4 4" />
+                                <path d="M14 4l-4 16" />
+                            </svg>
+                        </div>
+                        <span class="servicio__numero">02</span>
+                        <h3>Desarrollo Front-End</h3>
+                        <p>Interfaces interactivas con HTML, CSS y JavaScript, o frameworks como React cuando el
+                            proyecto lo pide.</p>
+                        <ul>
+                            <li>Código limpio y mantenible</li>
+                            <li>Animaciones e interacción</li>
+                            <li>Accesibilidad y buenas prácticas</li>
+                        </ul>
+                    </article>
+
+                    <article class="servicio brillo revelar">
+                        <div class="servicio__icono">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M3 10l18 0" />
+                                <path d="M7 15l.01 0" />
+                                <path d="M11 15l2 0" />
+                                <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+                            </svg>
+                        </div>
+                        <span class="servicio__numero">03</span>
+                        <h3>Páginas de Venta</h3>
+                        <p>Páginas de productos o servicios con formularios de contacto e integración básica con
+                            plataformas como PayPal o EmailJS.</p>
+                        <ul>
+                            <li>Formularios que llegan a tu correo</li>
+                            <li>Catálogo de productos</li>
+                            <li>Pagos básicos en línea</li>
+                        </ul>
+                    </article>
                 </div>
-
-                <p>Desarrollo de sitios web modernos, rápidos y adaptables a cualquier dispositivo. Ideal para portafolios, negocios pequeños o landing pages.
-                </p>
-            </section>
-
-            <section class="servicio">
-                <h3>Desarrollo Front-End</h3>
-
-                <div class="iconos">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" height="32">
-                        <path d="M4 10l0 6" />
-                        <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />
-                        <path d="M8 3l1 2" />
-                        <path d="M16 3l-1 2" />
-                        <path d="M9 18l0 3" />
-                        <path d="M15 18l0 3" />
-                        <path d="M20 10l0 6" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" height="32">
-                        <path
-                            d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z" />
-                        <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
-                    </svg>
-                </div>
-
-                <p>Implementación de interfaces interactivas usando tecnologías modernas como HTML, CSS, JavaScript y frameworks como React o similares.
-                </p>
-            </section>
-
-            <section class="servicio">
-                <h3>Páginas de Venta / E-Commerce Básico</h3>
-
-                <div class="iconos">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="32">
-                        <path d="M3 10l18 0" />
-                        <path d="M7 15l.01 0" />
-                        <path d="M11 15l2 0" />
-                        <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
-                    </svg>
-                </div>
-
-                <p>Creación de páginas de productos o servicios con formularios de contacto o integración básica con plataformas como PayPal o EmailJS.
-                </p>
-            </section>
-        </div>
-
-        <section class="portafolio">
-            <section class="titulo-portafolio">
-                <h2>Mis proyectos</h2>
-            </section>
+            </div>
         </section>
 
-        <div class="portafolio-grid" id="contenedor-proyectos"></div>
+        <!-- ================= PROYECTOS ================= -->
+        <section class="seccion" id="proyectos">
+            <div class="contenedor">
+                <header class="seccion__encabezado revelar">
+                    <p class="sobretitulo"><span>03</span> Portafolio</p>
+                    <h2>Proyectos destacados</h2>
+                    <p>Aplicaciones web completas, desde el diseño hasta la base de datos, publicadas y funcionando
+                        en línea.</p>
+                </header>
+
+                <div class="proyectos" id="contenedor-proyectos"></div>
+            </div>
+        </section>
+
+        <!-- ================= PROCESO ================= -->
+        <section class="seccion seccion--suave" id="proceso">
+            <div class="contenedor">
+                <header class="seccion__encabezado revelar">
+                    <p class="sobretitulo"><span>04</span> Cómo trabajo</p>
+                    <h2>De la idea al sitio publicado</h2>
+                    <p>Un proceso claro, para que sepas en todo momento en qué punto está tu proyecto.</p>
+                </header>
+
+                <ol class="proceso">
+                    <li class="paso revelar">
+                        <span class="paso__numero">1</span>
+                        <h3>Conversamos</h3>
+                        <p>Me cuentas tu idea, tus objetivos y a quién quieres llegar.</p>
+                    </li>
+                    <li class="paso revelar">
+                        <span class="paso__numero">2</span>
+                        <h3>Diseño</h3>
+                        <p>Propongo la estructura y el estilo visual antes de escribir código.</p>
+                    </li>
+                    <li class="paso revelar">
+                        <span class="paso__numero">3</span>
+                        <h3>Desarrollo</h3>
+                        <p>Construyo el sitio y te comparto avances para ajustar detalles.</p>
+                    </li>
+                    <li class="paso revelar">
+                        <span class="paso__numero">4</span>
+                        <h3>Lanzamiento</h3>
+                        <p>Publico tu sitio en línea y te explico cómo mantenerlo.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ================= CONTACTO ================= -->
+        <section class="contacto" id="contacto">
+            <div class="contacto__fondo" aria-hidden="true"></div>
+
+            <div class="contenedor contacto__grid">
+                <div class="contacto__info revelar">
+                    <p class="sobretitulo sobretitulo--claro"><span>05</span> Contacto</p>
+                    <h2>Hablemos de tu próximo proyecto.</h2>
+                    <p class="contacto__descripcion">
+                        ¿Tienes una idea, un negocio que necesita presencia en línea o una oportunidad laboral?
+                        Escríbeme y te respondo lo antes posible.
+                    </p>
+
+                    <ul class="contacto__lista">
+                        <li>
+                            <span class="contacto__icono">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                </svg>
+                            </span>
+                            <span><small>Ubicación</small>Heredia, Costa Rica</span>
+                        </li>
+                        <li>
+                            <span class="contacto__icono">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                                    <path d="M3.6 9h16.8M3.6 15h16.8" />
+                                    <path d="M11.5 3a17 17 0 0 0 0 18M12.5 3a17 17 0 0 1 0 18" />
+                                </svg>
+                            </span>
+                            <span><small>Modalidad</small>Trabajo remoto, con clientes de cualquier lugar</span>
+                        </li>
+                        <li>
+                            <span class="contacto__icono">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12l5 5L20 7" />
+                                </svg>
+                            </span>
+                            <span><small>Disponibilidad</small>Abierto a proyectos freelance y oportunidades</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="formulario revelar" id="contactForm" novalidate>
+                    <fieldset class="opciones">
+                        <legend>¿Qué necesitas?</legend>
+                        <label class="opcion">
+                            <input type="radio" name="servicio" value="Sitio web" checked>
+                            <span>Sitio web</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="servicio" value="Landing page">
+                            <span>Landing page</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="servicio" value="Tienda en línea">
+                            <span>Tienda en línea</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="servicio" value="Otro">
+                            <span>Otro</span>
+                        </label>
+                    </fieldset>
+
+                    <div class="formulario__fila">
+                        <div class="campo">
+                            <input type="text" id="nombre" name="nombre" placeholder=" " autocomplete="name" required>
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <div class="campo">
+                            <input type="tel" id="telefono" name="telefono" placeholder=" " autocomplete="tel" required>
+                            <label for="telefono">Teléfono</label>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <input type="email" id="correo" name="correo" placeholder=" " autocomplete="email" required>
+                        <label for="correo">Correo electrónico</label>
+                    </div>
+
+                    <div class="campo">
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder=" " required></textarea>
+                        <label for="mensaje">Cuéntame sobre tu proyecto</label>
+                    </div>
+
+                    <button type="submit" class="boton boton--primario boton--grande formulario__enviar">
+                        <span class="formulario__texto">Enviar mensaje</span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                        <span class="cargando" aria-hidden="true"></span>
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <footer class="Pie-pagina">
-        <p>&copy; 2025 Julián Quesada Víquez. Todos los derechos reservados.</p>
+    <!-- ================= PIE DE PÁGINA ================= -->
+    <footer class="pie">
+        <div class="contenedor pie__grid">
+            <div>
+                <a href="#inicio" class="marca">
+                    <span class="marca__logo">JQ</span>
+                    <span class="marca__texto">Julián Quesada <small>Desarrollador Web</small></span>
+                </a>
+                <p class="pie__lema">Diseño y desarrollo web desde Heredia, Costa Rica.</p>
+            </div>
+
+            <nav class="pie__enlaces" aria-label="Enlaces del pie de página">
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#proceso">Proceso</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+
+        <div class="contenedor pie__legal">
+            <p>&copy; <span id="anio">2026</span> Julián Quesada Víquez. Todos los derechos reservados.</p>
+            <a href="#inicio" class="pie__arriba">Volver arriba ↑</a>
+        </div>
     </footer>
 
-    <script src="javascript/boton-nav.js"></script>
-    <script src="javascript/funciones.js"></script>
-    <script src="javascript/nav-scroll.js"></script>
     <script src="javascript/proyectos.js"></script>
     <script src="javascript/cargar-proyecto.js"></script>
+    <script src="javascript/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script>
+    <script src="javascript/contacto.js"></script>
 </body>
 
 </html>
