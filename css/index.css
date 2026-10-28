@@ -971,6 +971,47 @@ a {
     color: var(--texto-suave);
 }
 
+.linea-tiempo__lista {
+    margin: .5rem 0 0;
+    padding-left: 1.1rem;
+    font-size: .92rem;
+    color: var(--texto-suave);
+}
+
+.linea-tiempo__lista li + li {
+    margin-top: .3rem;
+}
+
+/* Certificaciones */
+.certificaciones {
+    display: grid;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.certificaciones li {
+    padding-left: 1rem;
+    border-left: 2px solid var(--linea);
+    transition: border-color .2s ease;
+}
+
+.certificaciones li:hover {
+    border-left-color: var(--primario);
+}
+
+.certificaciones h4 {
+    font-size: .98rem;
+}
+
+.certificaciones span {
+    display: block;
+    margin-top: .15rem;
+    font-size: .86rem;
+    color: var(--texto-suave);
+}
+
 /* Habilidades */
 .habilidades {
     display: grid;

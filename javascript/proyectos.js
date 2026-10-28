@@ -36,7 +36,7 @@ const proyectos = [
     titulo: "Entre Líneas",
     tipo: "Proyecto universitario",
     url: "https://entrelineaslib.netlify.app/",
-    imagen: "img/entrelineaslib.png",
+    imagen: "img/entrelineas-preview.jpg",
     descripcion: "Librería virtual con catálogo dinámico, ficha detallada de cada libro (autor, editorial, ISBN, precio y stock) y carrito de compras guardado por usuario en una base de datos en la nube.",
     destacados: [
       "Registro con confirmación por correo y recuperación de contraseña",
@@ -49,7 +49,7 @@ const proyectos = [
   {
     titulo: "Side Street",
     url: "https://sidestreet.netlify.app",
-    imagen: "img/sidestreet-preview.png",
+    imagen: "img/sidestreet-preview.jpg",
     descripcion: "Sitio para un local de pizza urbana, con diseño moderno y un enfoque visual minimalista que pone la comida al centro.",
     destacados: [
       "Diseño responsive para celular, tablet y escritorio",
